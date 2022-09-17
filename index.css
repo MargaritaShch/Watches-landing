@@ -16,6 +16,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 
 body {
 font-family: 'League Spartan', sans-serif;
+ margin-right: 0 auto;
 }
 
 .header-container {
@@ -26,6 +27,7 @@ font-family: 'League Spartan', sans-serif;
     padding-right: 133px;
     padding-bottom: 168px;
     background-color: #F8F8F8;
+    margin-right: 0 auto;
 }
 
 .header-title {
@@ -43,7 +45,7 @@ font-family: 'League Spartan', sans-serif;
 }
 .header-discription {
   margin-bottom: 61px;
-  font-size: 32px;
+  font-size: 35px;
   line-height: 50px;
   font-weight: 300;
 }
@@ -95,7 +97,7 @@ font-family: 'League Spartan', sans-serif;
   line-height: 81px;
   font-weight: 400;
   text-align: center;
-  margin-bottom: 84px;
+  margin-bottom: 30px;
 }
 
 .item-wrapper{
@@ -149,9 +151,99 @@ font-family: 'League Spartan', sans-serif;
   text-align: center;
   font-size: 22px;
   line-height: 44px;
+  margin-bottom: 50px;
+  margin-top: 15px;
 }
 
 .product-description-link {
-color: #BB8B5D;
+    color: #BB8B5D;
 }
+
+/* Мобильные устройства*/
+@media (max-width: 720px) {
+.header {
+      padding: 50px 10px;
+   }
+.header-title {
+      font-size: 16px;
+      line-height: 20px;
+  }
+.header-subtitle {
+      font-size: 66px;
+      line-height: 25px;
+  }
+.header-discription {
+    font-size: 25px;
+    line-height: 40px;
+  }
+.header-container {
+    width: 720px;
+    padding-top: 52px;
+    padding-left: 67px;
+    padding-right: 67px;
+    padding-bottom: 84px;
+  }
+.header-img {
+    width: 270px;
+    margin-left: 70px;
+  }
+.buy-link {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  line-height: 50px;
+  }
+.price  {
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  line-height: 50px;
+  }
+.popular-title {
+  font-size: 30px;
+  line-height: 25px;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 300;
+  margin-left: 320px;
+  }
+.model-title {
+  margin-left: 300px;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 28px;
+  justify-content: center;
+  align-items: center;
+}
+.item-wrapper{
+  margin-left: 170px;
+  width: 417px;
+  margin-bottom: 85px;
+  justify-content: center;
+  align-items: center;
+}
+.product-description-wrapper {
+  margin-left: 170px;
+  width: 417px;
+  margin-bottom: 85px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20;
+}
+}
+  
+
+ 
+/* Мобильные устройства 
+@media (max-width: 720px) {
+   header {
+       padding: 10px;
+   }*/
+ 
+
+
+
 
