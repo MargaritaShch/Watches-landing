@@ -1,10 +1,14 @@
-/*https://www.digitalocean.com/community/tutorials/css-minimal-css-reset - сброс настроек стилей браузера*/
+/* - сброс настроек стилей браузера*/
 html {
+  /*размеры элемента (ширина и высота) включают в себя границы и отступы,
+    и размеры элемента задаются с учетом контента,
+    границ и отступов*/
   box-sizing: border-box;
   font-size: 16px;
 }
 
 *, *:before, *:after {
+  /*в inherit, элемент наследует значение этого свойства от своего родительского элемента.*/
   box-sizing: inherit;
 }
 
@@ -15,25 +19,25 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 }
 
 body {
-font-family: 'League Spartan', sans-serif;
- margin-right: 0 auto;
+  font-family: 'League Spartan', sans-serif;
+  margin: 0 auto;
 }
 
 .header-container {
-    display: flex;
-    width: 1440px;
-    padding-top: 104px;
-    padding-left: 133px;
-    padding-right: 133px;
-    padding-bottom: 168px;
-    background-color: #F8F8F8;
-    margin-right: 0 auto;
+  display: flex;
+  padding-top: 80px;
+  padding-left: 133px;
+  padding-right: 133px; 
+  padding-bottom: 168px;
+  background-color: #F8F8F8;
+  margin: 0 auto;
 }
 
 .header-title {
-    font-size: 24px;
-    line-height: 45px;
-    font-weight: 400;
+  font-size: 24px;
+  /*которое устанавливает высоту строки (междустрочное расстояние) в элементе*/
+  line-height: 45px;
+  font-weight: 400;
 }
 
 .header-subtitle {
@@ -81,7 +85,7 @@ font-family: 'League Spartan', sans-serif;
   display: block;
   width: 400px;
   margin-top: -50px;
-  margin-left: 50px;
+  margin-left: 20px;
 }
 
 .popular-title {
@@ -132,7 +136,7 @@ font-family: 'League Spartan', sans-serif;
 
 .product-description-wrapper {
   margin: 0 auto;
-  width: 417px;
+  width: 700px;
   margin-bottom: 10px;
   margin-top: 100px;
 }
@@ -161,6 +165,9 @@ font-family: 'League Spartan', sans-serif;
 
 /* Мобильные устройства*/
 @media (max-width: 720px) {
+.header-container{
+  
+}
 .header {
       padding: 50px 10px;
    }
@@ -235,13 +242,76 @@ font-family: 'League Spartan', sans-serif;
 }
 }
   
+/* Планшеты */
+@media (max-width: 1024px) {
+.header-subtitle {
+      font-size: 66px;
+      line-height: 25px;
+  }
+.header-discription {
+    font-size: 30px;
+    line-height: 40px;
+  }
+.header-container {
+    width: 1024px;
+    padding-top: 52px;
+    padding-left: 67px;
+    padding-right: 67px;
+    padding-bottom: 84px;
+  }
+.header-img {
+    width: 300px;
+    margin: 0 auto;
+    padding-right: 30px;
+  }
+.buy-link {
+  width: 250px;
+  height: 70px;
+  font-size: 30px;
+  line-height: 70px;
+  }
+.price  {
+  width: 250px;
+  height: 70px;
+  font-size: 30px;
+  line-height: 70px;
+  }
+.popular-title {
+  font-size: 30px;
+  line-height: 25px;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 300;
+  margin-left: 320px;
+  }
+.model-title {
+  margin-left: 300px;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 28px;
+  justify-content: center;
+  align-items: center;
+}
+.item-wrapper{
+  margin-left: 350px;
+  width: 417px;
+  margin-bottom: 85px;
+  justify-content: center;
+  align-items: center;
+}
+.product-description-wrapper {
+  margin-left: 350px;
+  width: 417px;
+  margin-bottom: 85px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20;
+} 
 
- 
-/* Мобильные устройства 
-@media (max-width: 720px) {
-   header {
-       padding: 10px;
-   }*/
+}
  
 
 
