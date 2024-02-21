@@ -4,3 +4,4 @@
 ### - HTML; 
 ### - CSS;
 ### - adapted for mobile devices.
+### View link: [Watches-landing](https://margaritashch.github.io/Watches-landing/) 
